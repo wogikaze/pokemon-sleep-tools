@@ -1,24 +1,16 @@
 "use client";
 import React from "react";
-import Button from "@mui/material/Button";
+import Image from "next/image";
 import MUIDataTable from "mui-datatables";
-
-type PokemonNature = "さみしがり" | "いじっぱり" | "やんちゃ" | "ゆうかん" | "ずぶとい" | "わんぱく" | "のうてんき" | "のんき" | "ひかえめ" | "おっとり" | "うっかりや" | "れいせい" | "おだやか" | "おとなしい" | "しんちょう" | "なまいき" | "おくびょう" | "せっかち" | "ようき" | "むじゃき" | "てれや" | "がんばりや" | "すなお" | "きまぐれ" | "まじめ";
-type Pokemon = {
-  personalId: number;
-  name: string;
-  level: number;
-  berry: string;
-  ingredients: string[];
-  nature: PokemonNature;
-  mainSkill: string;
-};
+import { Pokemon } from "../types";
+import { defaultpokemon } from "./pokemonlist";
 
 function MyApp() {
   function CustomTable(props: { pokemons: Pokemon[] }) {
-    function openNatureEdit(index) {}
-    function openTagEdit(index) {}
-    function openLevelEdit(index) {}
+    function openNatureEdit(index: number) {}
+    function openLevelEdit(index: number) {
+      alert("aaaa");
+    }
     const columns = [
       {
         name: "personalId",
@@ -28,7 +20,21 @@ function MyApp() {
       {
         name: "name",
         label: "ポケモン名",
-        options: { filter: true, display: true },
+        options: {
+          filter: false,
+          display: true,
+          customBodyRenderLite: (dataIndex: number) => {
+            return (
+              <div className="flex">
+                <div className="grow align-middle">{props.pokemons[dataIndex].name}</div>
+                {(() => {
+                  let name = props.pokemons[dataIndex].name;
+                  return <Image src={"/pokemon/" + name + ".png"} key={name} alt={name} title={name} width={25} height={25} loading="lazy"></Image>;
+                })()}
+              </div>
+            );
+          },
+        },
       },
       {
         name: "level",
@@ -37,23 +43,44 @@ function MyApp() {
           filter: false,
           display: true,
           customBodyRenderLite: (dataIndex: number) => {
-            return (
-              <>
-                <div onClick={() => openLevelEdit(dataIndex)}>{props.pokemons[dataIndex].nature}</div>
-              </>
-            );
+            return <div onClick={() => openLevelEdit(dataIndex)}>{props.pokemons[dataIndex].level}</div>;
           },
         },
       },
       {
         name: "berry",
         label: "きのみ",
-        options: { filter: true, display: true },
+        options: {
+          filter: true,
+          display: true,
+          customBodyRenderLite: (dataIndex: number) => {
+            return (
+              <div className="flex">
+                {(() => {
+                  let berry = props.pokemons[dataIndex].berry;
+                  return <Image src={"/" + berry + ".png"} key={berry} alt={berry} title={berry} width={25} height={25} loading="lazy"></Image>;
+                })()}
+              </div>
+            );
+          },
+        },
       },
       {
         name: "ingredients",
         label: "食材",
-        options: { filter: true, display: true },
+        options: {
+          filter: true,
+          display: true,
+          customBodyRenderLite: (dataIndex: number) => {
+            return (
+              <div className="flex">
+                {props.pokemons[dataIndex].ingredients.map((ingredient) => {
+                  return <Image src={"/" + ingredient + ".png"} key={ingredient} alt={ingredient} title={ingredient} width={25} height={25} loading="lazy"></Image>;
+                })}
+              </div>
+            );
+          },
+        },
       },
       {
         name: "nature",
@@ -86,31 +113,11 @@ function MyApp() {
     return <MUIDataTable title={"ここにテキストを入力"} data={props.pokemons} columns={columns} options={options} />;
   }
 
-  const pokemons: Pokemon[] = [
-    {
-      personalId: 1,
-      name: "ポチタ",
-      level: 10,
-      berry: "きのみ",
-      ingredients: ["食べ物", "食べ物", "食べ物"],
-      nature: "いじっぱり",
-      mainSkill: "すきる",
-    },
-    {
-      personalId: 2,
-      name: "ポチタ",
-      level: 10,
-      berry: "きのみ",
-      ingredients: ["食べ物", "食べ物", "食べ物"],
-      nature: "きまぐれ",
-      mainSkill: "すきる",
-    },
-  ];
   return (
     <div className="min-h-screen px-7">
       <h1 className="text-3xl">Welcome to my app</h1>
       <MyButton />
-      <CustomTable pokemons={pokemons}></CustomTable>
+      <CustomTable pokemons={defaultpokemon}></CustomTable>
     </div>
   );
 }
