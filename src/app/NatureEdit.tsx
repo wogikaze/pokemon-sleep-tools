@@ -1,4 +1,4 @@
-import { Pokemon } from "../types";
+import { Pokemon, PokemonNature } from "../types";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Select, MenuItem, InputLabel, FormControl } from "@mui/material";
@@ -21,7 +21,7 @@ export function NatureEdit(props: { open: boolean; onClose: () => void; pokemon:
         <DialogContentText>現在の性格：{props.pokemon.nature}</DialogContentText>
         <FormControl className="my-4">
           <InputLabel id="nature-select-label">性格</InputLabel>
-          <Select labelId="nature-select-label" id="nature-select" value={nature} onChange={(e) => setNature(e.target.value)}>
+          <Select labelId="nature-select-label" id="nature-select" value={nature} onChange={(e) => setNature(e.target.value as PokemonNature)}>
             {natures.map((n, i) => {
               return (
                 <MenuItem key={i} value={n}>

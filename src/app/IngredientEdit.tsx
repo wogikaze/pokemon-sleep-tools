@@ -45,21 +45,21 @@ export function IngredientEdit(props: { open: boolean; onClose: () => void; poke
           <div className="flex py-4 px-2">
             <FormControl>
               <InputLabel id="ing-1">食材1</InputLabel>
-              <Select labelId="ing-1" value={ing1} label="食材" onChange={(e) => setIng1(e.target.value)} fullWidth={true}>
+              <Select labelId="ing-1" value={ing1} label="食材" onChange={(e) => setIng1(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
                 {SelectIng}
               </Select>
             </FormControl>
             <FormControl>
               <InputLabel id="ing-1">食材2</InputLabel>
-              <Select labelId="ing-2" value={ing2} label="食材(25lv)" onChange={(e) => setIng2(e.target.value)} fullWidth={true}>
+              <Select labelId="ing-2" value={ing2} label="食材(25lv)" onChange={(e) => setIng2(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
                 {SelectIng}
               </Select>
             </FormControl>
             <FormControl>
               <InputLabel id="ing-1">食材3</InputLabel>
-              <Select labelId="ing-2" value={ing3} label="食材(75lv)" onChange={(e) => setIng3(e.target.value)} fullWidth={true}>
+              <Select labelId="ing-2" value={ing3} label="食材(75lv)" onChange={(e) => setIng3(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
                 {SelectIng}
               </Select>

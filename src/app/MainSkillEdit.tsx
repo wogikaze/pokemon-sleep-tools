@@ -24,7 +24,7 @@ export function MainSkillEdit(props: { open: boolean; onClose: () => void; pokem
             <DialogContentText>現在のメインスキル：{props.pokemon.mainSkill}</DialogContentText>
             <DialogContentText>Lv.{props.pokemon.mainSkillLevel}</DialogContentText>
           </div>
-          <TextField autoFocus margin="dense" id="level" label="レベル" type="" value={level} onChange={(e) => setLevel(e.target.value)} fullWidth />
+          <TextField autoFocus margin="dense" id="level" label="レベル" type="" value={level} onChange={(e) => setLevel(parseInt(e.target.value))} fullWidth />
         </DialogContent>
         <DialogActions>
           <Button onClick={props.onClose}>キャンセル</Button>

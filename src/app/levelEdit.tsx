@@ -20,7 +20,7 @@ export function LevelEdit(props: { open: boolean; onClose: () => void; pokemon: 
         <DialogContent>
           <DialogContentText>選択されたポケモン：{props.pokemon.name}</DialogContentText>
           <DialogContentText>現在のレベル：{props.pokemon.level}</DialogContentText>
-          <TextField autoFocus margin="dense" id="level" label="レベル" type="" value={level} onChange={(e) => setLevel(e.target.value)} fullWidth />
+          <TextField autoFocus margin="dense" id="level" label="レベル" type="" value={level} onChange={(e) => setLevel(parseInt(e.target.value))} fullWidth />
         </DialogContent>
         <DialogActions>
           <Button onClick={props.onClose}>キャンセル</Button>
