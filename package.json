@@ -16,6 +16,8 @@
     "@mui/material": "^5.14.19",
     "@mui/x-data-grid": "^6.18.2",
     "@types/mui-datatables": "^4.3.10",
+    "dexie": "^3.2.4",
+    "dexie-react-hooks": "^1.1.7",
     "install": "^0.13.0",
     "mui-datatables": "^4.3.0",
     "next": "14.0.3",

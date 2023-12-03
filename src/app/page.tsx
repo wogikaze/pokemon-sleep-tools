@@ -2,11 +2,20 @@
 import { useState, useEffect } from "react";
 import { Pokemon } from "../types";
 import { NewPokemon } from "./NewPokemon";
-import useBuilds from "./useBuilds";
 import { PokemonTable } from "./PokemonTable";
+import { addItem, getAllItems } from "./db";
 
 function MyApp() {
-  const { PokemonList, setPokemonList } = useBuilds();
+  const [PokemonList, setPokemonList] = useState<Pokemon[]>([]);
+
+  const fetchData = async () => {
+    const data = await getAllItems();
+    console.log(data)
+    setPokemonList(data);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const [isOpenNewPokemonScreen, setIsOpenNewPokemonScreen] = useState(false);
   const handleClickOpenNewPokemon = () => {
@@ -16,9 +25,10 @@ function MyApp() {
   const handleCloseNewPokemon = () => {
     setIsOpenNewPokemonScreen(false);
   };
-  const addPokemon = (newPokemon: Pokemon) => {
+  const addPokemon = async (newPokemon: Pokemon) => {
     console.log(newPokemon);
-    setPokemonList([...PokemonList, newPokemon]);
+    await setPokemonList([...PokemonList, newPokemon]);
+    addItem(newPokemon);
   };
   return (
     <div className="min-h px-7">

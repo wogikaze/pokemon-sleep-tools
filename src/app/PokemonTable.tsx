@@ -7,6 +7,7 @@ import { NatureEdit } from "./NatureEdit";
 import { MainSkillEdit } from "./MainSkillEdit";
 import { SubSkillEdit } from "./SubSkillEdit";
 import { useState, useEffect } from "react";
+import { addItem, getAllItems, removeItem } from "./db";
 
 export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
   const [pokemonIndex, setPokemonIndex] = useState(0);
@@ -20,10 +21,7 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon>();
   const isOpenEditMenu = isOpenLevelEdit || isOpenNatureEdit || isOpenIngredientsEdit || isOpenMainSkillEdit || isOpenSubSkillEdit;
   useEffect(() => {
-    setisLoading(true);
-    setTimeout(() => {
-      setisLoading(false);
-    }, 100);
+    setisLoading(false);
   }, []);
 
   useEffect(() => {
@@ -187,19 +185,19 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
           const subSkilldiv = subSkills.map((subSkill, i) => {
             if (["おてつだいボーナス", "げんき回復ボーナス", "睡眠EXPボーナス", "リサーチEXPボーナス", "ゆめのかけらボーナス", "食材の数S", "スキルレベルアップM"].some((e) => e === subSkill)) {
               return (
-                <div key={i} className="bg-yellow-100 border-2 border-yellow-500 text-amber-900 py-1 px-8 rounded shadow-md hover:bg-yellow-200 font-bold max-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
+                <div key={i} className="bg-yellow-100 border-2 border-yellow-500 text-amber-900 py-1 px-8 rounded shadow-md hover:bg-yellow-200 font-bold min-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
                   {subSkill}
                 </div>
               );
             } else if (["おてつだいスピードM", "食材確率アップM", "スキル確率アップM", "最大所持数アップM", "最大所持数アップL", "スキルレベルアップS"].some((e) => e === subSkill)) {
               return (
-                <div key={i} className="bg-blue-100 border-2 border-blue-500 text-gray-500 py-1 px-8 rounded shadow-md hover:bg-blue-200 font-bold max-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
+                <div key={i} className="bg-blue-100 border-2 border-blue-500 text-gray-500 py-1 px-8 rounded shadow-md hover:bg-blue-200 font-bold min-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
                   {subSkill}
                 </div>
               );
             } else if (subSkill !== undefined) {
               return (
-                <div key={i} className="bg-gray-100 border-2 border-gray-500 text-stone-500 py-1 px-8 rounded shadow-md hover:bg-gray-300 font-bold max-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
+                <div key={i} className="bg-gray-100 border-2 border-gray-500 text-stone-500 py-1 px-8 rounded shadow-md hover:bg-gray-300 font-bold min-w-[200px] whitespace-nowrap text-center" onClick={() => openSubSkillEdit(dataIndex)}>
                   {subSkill}
                 </div>
               );
@@ -217,6 +215,13 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
     download: false,
     print: false,
     tableId: "1",
+    onRowsDelete: async (e: any) => {
+      console.log(e);
+      e.data.forEach(async (ele: any) => {
+        await removeItem(ele.dataIndex);
+      });
+    },
+    storageKey: "pokemon",
   };
   return (
     <div>
