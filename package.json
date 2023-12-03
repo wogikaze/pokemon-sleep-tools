@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "debug": "set NODE_OPTIONS=--inspect && next dev"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.18",
-    "@mui/material": "^5.14.18",
+    "@mui/material": "^5.14.19",
     "@mui/x-data-grid": "^6.18.2",
     "@types/mui-datatables": "^4.3.10",
     "install": "^0.13.0",
@@ -20,7 +21,8 @@
     "next": "14.0.3",
     "npm": "^10.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-select": "^5.8.0"
   },
   "devDependencies": {
     "@types/node": "^20",

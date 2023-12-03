@@ -8,6 +8,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ほっこりポテト"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -19,6 +20,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ほっこりポテト"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -30,6 +32,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ほっこりポテト"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -41,6 +44,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "あったかジンジャー", "げきからハーブ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -52,6 +56,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "あったかジンジャー", "げきからハーブ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -63,6 +68,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "あったかジンジャー", "げきからハーブ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -74,6 +80,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -85,6 +92,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -96,6 +104,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -107,6 +116,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -118,6 +128,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -129,6 +140,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あんみんトマト", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -140,6 +152,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "ワカクサ大豆", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -151,6 +164,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "ワカクサ大豆", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -162,6 +176,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "とくせんエッグ", "げきからハーブ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -173,6 +188,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "とくせんエッグ", "げきからハーブ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -184,6 +200,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あったかジンジャー", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -195,6 +212,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あったかジンジャー", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -206,6 +224,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あったかジンジャー", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -217,6 +236,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あまいミツ", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -228,6 +248,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あまいミツ", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -239,6 +260,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "ピュアなオイル", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "げんきオールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -250,6 +272,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "ピュアなオイル", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "げんきオールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -261,6 +284,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ふといながねぎ", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -272,6 +296,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ふといながねぎ", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -280,9 +305,10 @@ export const defaultpokemon = [
     name: "ニャース",
     level: 1,
     berry: "キーのみ",
-    ingredients: ["モーモーミルク", "マメミート", "spacer.gif"],
+    ingredients: ["モーモーミルク", "マメミート", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -291,9 +317,10 @@ export const defaultpokemon = [
     name: "ペルシアン",
     level: 1,
     berry: "キーのみ",
-    ingredients: ["モーモーミルク", "マメミート", "spacer.gif"],
+    ingredients: ["モーモーミルク", "マメミート", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -305,6 +332,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "とくせんリンゴ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -316,6 +344,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "とくせんリンゴ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -327,6 +356,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "あじわいキノコ", "あまいミツ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -338,6 +368,7 @@ export const defaultpokemon = [
     ingredients: ["マメミート", "あじわいキノコ", "あまいミツ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -349,6 +380,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "マメミート", "モーモーミルク"],
     nature: "いじっぱり",
     mainSkill: "おてつだいサポートS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -360,6 +392,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "マメミート", "モーモーミルク"],
     nature: "いじっぱり",
     mainSkill: "おてつだいサポートS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -371,6 +404,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ほっこりポテト", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -382,6 +416,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ほっこりポテト", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -393,6 +428,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ほっこりポテト", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -404,6 +440,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "ほっこりポテト", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -415,6 +452,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "ほっこりポテト", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -426,6 +464,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "ほっこりポテト", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -437,6 +476,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "おいしいシッポ", "あんみんトマト"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -448,6 +488,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "おいしいシッポ", "あんみんトマト"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -456,9 +497,10 @@ export const defaultpokemon = [
     name: "コイル",
     level: 1,
     berry: "ベリブのみ",
-    ingredients: ["ピュアなオイル", "げきからハーブ", "spacer.gif"],
+    ingredients: ["ピュアなオイル", "げきからハーブ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "料理パワーアップS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -467,9 +509,10 @@ export const defaultpokemon = [
     name: "レアコイル",
     level: 1,
     berry: "ベリブのみ",
-    ingredients: ["ピュアなオイル", "げきからハーブ", "spacer.gif"],
+    ingredients: ["ピュアなオイル", "げきからハーブ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "料理パワーアップS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -481,6 +524,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -492,6 +536,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -503,6 +548,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "あじわいキノコ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -514,6 +560,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "あじわいキノコ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -525,6 +572,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "あじわいキノコ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -536,6 +584,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "マメミート", "ほっこりポテト"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -544,9 +593,10 @@ export const defaultpokemon = [
     name: "カラカラ",
     level: 1,
     berry: "フィラのみ",
-    ingredients: ["あったかジンジャー", "リラックスカカオ", "spacer.gif"],
+    ingredients: ["あったかジンジャー", "リラックスカカオ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -555,9 +605,10 @@ export const defaultpokemon = [
     name: "ガラガラ",
     level: 1,
     berry: "フィラのみ",
-    ingredients: ["あったかジンジャー", "リラックスカカオ", "spacer.gif"],
+    ingredients: ["あったかジンジャー", "リラックスカカオ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -569,6 +620,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "ほっこりポテト", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -580,6 +632,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ほっこりポテト", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -591,6 +644,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "とくせんリンゴ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -602,6 +656,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "ふといながねぎ", "おいしいシッポ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -613,6 +668,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -624,6 +680,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -635,6 +692,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "おてつだいサポートS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -646,6 +704,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "料理パワーアップS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -657,6 +716,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "あまいミツ", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -668,6 +728,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "あまいミツ", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -679,6 +740,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "あまいミツ", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -690,6 +752,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "げきからハーブ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -701,6 +764,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "げきからハーブ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -712,6 +776,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "げきからハーブ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -720,9 +785,10 @@ export const defaultpokemon = [
     name: "ワニノコ",
     level: 1,
     berry: "オレンのみ",
-    ingredients: ["マメミート", "ピュアなオイル", "spacer.gif"],
+    ingredients: ["マメミート", "ピュアなオイル", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -731,9 +797,10 @@ export const defaultpokemon = [
     name: "アリゲイツ",
     level: 1,
     berry: "オレンのみ",
-    ingredients: ["マメミート", "ピュアなオイル", "spacer.gif"],
+    ingredients: ["マメミート", "ピュアなオイル", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -742,9 +809,10 @@ export const defaultpokemon = [
     name: "オーダイル",
     level: 1,
     berry: "オレンのみ",
-    ingredients: ["マメミート", "ピュアなオイル", "spacer.gif"],
+    ingredients: ["マメミート", "ピュアなオイル", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -756,6 +824,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あったかジンジャー", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -767,6 +836,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あまいミツ", "ワカクサ大豆"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -778,6 +848,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "ピュアなオイル", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "げんきオールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -789,6 +860,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんエッグ", "あったかジンジャー", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -800,6 +872,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんエッグ", "あったかジンジャー", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -808,9 +881,10 @@ export const defaultpokemon = [
     name: "メリープ",
     level: 1,
     berry: "ウブのみ",
-    ingredients: ["げきからハーブ", "とくせんエッグ", "spacer.gif"],
+    ingredients: ["げきからハーブ", "とくせんエッグ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -819,9 +893,10 @@ export const defaultpokemon = [
     name: "モココ",
     level: 1,
     berry: "ウブのみ",
-    ingredients: ["げきからハーブ", "とくせんエッグ", "spacer.gif"],
+    ingredients: ["げきからハーブ", "とくせんエッグ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -830,9 +905,10 @@ export const defaultpokemon = [
     name: "デンリュウ",
     level: 1,
     berry: "ウブのみ",
-    ingredients: ["げきからハーブ", "とくせんエッグ", "spacer.gif"],
+    ingredients: ["げきからハーブ", "とくせんエッグ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -844,6 +920,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ワカクサ大豆", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -855,6 +932,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -866,6 +944,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -877,6 +956,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "おいしいシッポ", "あんみんトマト"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -888,6 +968,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あじわいキノコ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -899,6 +980,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "マメミート", "ほっこりポテト"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -910,6 +992,7 @@ export const defaultpokemon = [
     ingredients: ["あまいミツ", "あじわいキノコ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -921,6 +1004,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "あったかジンジャー", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -932,6 +1016,7 @@ export const defaultpokemon = [
     ingredients: ["げきからハーブ", "あったかジンジャー", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -943,6 +1028,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "ワカクサ大豆", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -954,6 +1040,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "ワカクサ大豆", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -965,6 +1052,7 @@ export const defaultpokemon = [
     ingredients: ["あったかジンジャー", "ワカクサ大豆", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -976,6 +1064,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "あまいミツ", "とくせんリンゴ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -987,6 +1076,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "あまいミツ", "とくせんリンゴ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -998,6 +1088,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "あまいミツ", "とくせんリンゴ"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1009,6 +1100,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "あじわいキノコ", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1020,6 +1112,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "あじわいキノコ", "あまいミツ"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1031,6 +1124,7 @@ export const defaultpokemon = [
     ingredients: ["ワカクサ大豆", "あじわいキノコ", "あまいミツ"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1042,6 +1136,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんエッグ", "ワカクサ大豆", "とくせんリンゴ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1053,6 +1148,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんエッグ", "ワカクサ大豆", "とくせんリンゴ"],
     nature: "いじっぱり",
     mainSkill: "げんきチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1064,6 +1160,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "あったかジンジャー", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1075,6 +1172,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "あったかジンジャー", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS(ランダム)",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1086,6 +1184,7 @@ export const defaultpokemon = [
     ingredients: ["リラックスカカオ", "とくせんリンゴ", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1097,6 +1196,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんリンゴ", "あじわいキノコ", "ピュアなオイル"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1108,6 +1208,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "マメミート", "あったかジンジャー"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1119,6 +1220,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "マメミート", "あったかジンジャー"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1130,6 +1232,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "マメミート", "あったかジンジャー"],
     nature: "いじっぱり",
     mainSkill: "食材ゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1141,6 +1244,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ワカクサ大豆", "あじわいキノコ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージM",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1152,6 +1256,7 @@ export const defaultpokemon = [
     ingredients: ["あんみんトマト", "ほっこりポテト", "ふといながねぎ"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1163,6 +1268,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "ほっこりポテト", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1174,6 +1280,7 @@ export const defaultpokemon = [
     ingredients: ["ピュアなオイル", "ほっこりポテト", "とくせんエッグ"],
     nature: "いじっぱり",
     mainSkill: "ゆめのかけらゲットS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1182,9 +1289,10 @@ export const defaultpokemon = [
     name: "グレッグル",
     level: 1,
     berry: "カゴのみ",
-    ingredients: ["ピュアなオイル", "マメミート", "spacer.gif"],
+    ingredients: ["ピュアなオイル", "マメミート", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1193,9 +1301,10 @@ export const defaultpokemon = [
     name: "ドクロッグ",
     level: 1,
     berry: "カゴのみ",
-    ingredients: ["ピュアなオイル", "マメミート", "spacer.gif"],
+    ingredients: ["ピュアなオイル", "マメミート", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "エナジーチャージS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1204,9 +1313,10 @@ export const defaultpokemon = [
     name: "ジバコイル",
     level: 1,
     berry: "ベリブのみ",
-    ingredients: ["ピュアなオイル", "げきからハーブ", "spacer.gif"],
+    ingredients: ["ピュアなオイル", "げきからハーブ", "設定なし"],
     nature: "いじっぱり",
     mainSkill: "料理パワーアップS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1218,6 +1328,7 @@ export const defaultpokemon = [
     ingredients: ["とくせんエッグ", "あったかジンジャー", "リラックスカカオ"],
     nature: "いじっぱり",
     mainSkill: "ゆびをふる",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1229,6 +1340,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきエールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1240,6 +1352,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "料理パワーアップS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 
@@ -1251,6 +1364,7 @@ export const defaultpokemon = [
     ingredients: ["モーモーミルク", "リラックスカカオ", "マメミート"],
     nature: "いじっぱり",
     mainSkill: "げんきオールS",
+    mainSkillLevel: 1,
     subSkill: ["スキル確率アップM", "スキル確率アップS", "睡眠EXPボーナス"],
   },
 ] as Pokemon[];
