@@ -18,7 +18,7 @@ export function IngredientEdit(props: { open: boolean; onClose: () => void; poke
     props.onClose();
   }
   // const ingredients: Ingredients[] = ["とくせんリンゴ", "モーモーミルク", "ワカクサ大豆", "あまいミツ", "マメミート", "あったかジンジャー", "あんみんトマト", "とくせんエッグ", "ピュアなオイル", "ほっこりポテト", "げきからハーブ", "リラックスカカオ", "あじわいキノコ", "ふといながねぎ", "おいしいシッポ"];
-  const ingredients = defaultpokemon.filter((poke) => poke.name === name)[0].ingredients;
+  const ingredients = defaultpokemon.filter((poke) => poke.name === name)[0].ingredients.filter((ingredient) => ingredient !== "設定なし");
   console.log(ingredients);
   const SelectIng = ingredients.map((ingredient) => {
     return (

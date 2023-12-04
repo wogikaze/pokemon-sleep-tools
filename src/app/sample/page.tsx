@@ -1,43 +1,22 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { addItem, getAllItems, Item } from "./db";
+import { PokemonTable } from "../PokemonTable";
+import { defaultpokemon } from "../pokemonlist";
 
 const Home = () => {
-  const [items, setItems] = useState<Item[]>([]);
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-
-  const fetchData = async () => {
-    const data = await getAllItems();
-    setItems(data);
+  const options: Object = {
+    filterType: "checkbox",
+    rowsPerPage: 1000,
   };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    await addItem(name, description);
-    setName("");
-    setDescription("");
-    fetchData();
-  };
-
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" />
-        <button type="submit">Add Item</button>
-      </form>
-      <ul>
-        {items.map((item: Item) => (
-          <li key={item.id}>
-            {item.name}: {item.description}
-          </li>
-        ))}
-      </ul>
+    <div className="mx-4 my-4">
+      <h1 className="text-3xl my-4">ポケモンのリスト</h1>
+      <div className="pt-8 text-base font-semibold leading-7">
+        <a href="../" className="text-sky-500 hover:text-sky-600 my-2">
+          トップに戻る &rarr;
+        </a>
+      </div>
+      <PokemonTable pokemons={defaultpokemon} sample={true}></PokemonTable>
     </div>
   );
 };

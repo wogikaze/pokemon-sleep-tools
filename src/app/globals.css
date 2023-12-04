@@ -18,10 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+.tss-1akey0g-MUIDataTableHeadCell-data {
+  white-space: nowrap;
+}
+.tss-oeo5eo-MUIDataTableToolbar-filterPaper {
+  max-width: none !important;
+  left: 0;
+}
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  white-space: nowrap;
 }

@@ -16,21 +16,14 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
   const [isOpenIngredientsEdit, setIsOpenIngredientsEdit] = useState(false);
   const [isOpenMainSkillEdit, setIsOpenMainSkillEdit] = useState(false);
   const [isOpenSubSkillEdit, setIsopenSubSkillEdit] = useState(false);
-  const [isLoading, setisLoading] = useState(true);
 
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon>();
   const isOpenEditMenu = isOpenLevelEdit || isOpenNatureEdit || isOpenIngredientsEdit || isOpenMainSkillEdit || isOpenSubSkillEdit;
-  useEffect(() => {
-    setisLoading(false);
-  }, []);
 
   useEffect(() => {
     setSelectedPokemon(props.pokemons[pokemonIndex]);
   }, [pokemonIndex, props.pokemons]);
 
-  if (isLoading) {
-    return <div className="bg-slate-50 w-full h-4"></div>;
-  }
   function openLevelEdit(index: number) {
     setPokemonIndex(index);
     setIsOpenLevelEdit(true);
@@ -97,7 +90,7 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
       label: "レベル",
       options: {
         filter: false,
-        display: true,
+        display: !props.sample,
         customBodyRenderLite: (dataIndex: number) => {
           return <div onClick={() => openLevelEdit(dataIndex)}>{props.pokemons[dataIndex].level}</div>;
         },
@@ -142,8 +135,9 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
       name: "nature",
       label: "性格",
       options: {
-        filter: true,
+        filter: !props.sample,
         sort: true,
+        display: !props.sample,
         customBodyRenderLite: (dataIndex: number) => {
           return (
             <>
@@ -166,7 +160,7 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
             <>
               <div onClick={() => openMainSkillEdit(dataIndex)} className="whitespace-nowrap flex content-between">
                 <div>{props.pokemons[dataIndex].mainSkill}</div>
-                <div className="pl-4">Lv.{props.pokemons[dataIndex].mainSkillLevel}</div>
+                {!props.sample && <div className="pl-4">Lv.{props.pokemons[dataIndex].mainSkillLevel}</div>}
               </div>
             </>
           );
@@ -221,7 +215,8 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
         await removeItem(ele.dataIndex);
       });
     },
-    storageKey: "pokemon",
+    rowsPerPage: props.sample ? 200 : 100,
+    rowsPerPageOptions: props.sample ? [10, 15, 100, 200] : [10, 15, 100],
   };
   return (
     <div>
