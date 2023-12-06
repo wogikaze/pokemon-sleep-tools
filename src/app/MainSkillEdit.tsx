@@ -1,10 +1,12 @@
 import { Pokemon } from "../types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from "@mui/material";
 
 export function MainSkillEdit(props: { open: boolean; onClose: () => void; pokemon: Pokemon }) {
   const [level, setLevel] = useState(props.pokemon.mainSkillLevel);
-
+  useEffect(() => {
+    setLevel(props.pokemon.mainSkillLevel);
+  }, [props]);
   async function onClickItem() {
     if (level >= 1 && level <= 6) props.pokemon.mainSkillLevel = level;
     close();

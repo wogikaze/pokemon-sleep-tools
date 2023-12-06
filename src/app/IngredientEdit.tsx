@@ -1,15 +1,20 @@
 import { Ingredients, Pokemon } from "../types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 import { defaultpokemon } from "./pokemonlist";
 
 export function IngredientEdit(props: { open: boolean; onClose: () => void; pokemon: Pokemon }) {
   const name = props.pokemon.name;
+  // console.log(name)
   const [ing1, setIng1] = useState(props.pokemon.ingredients[0]);
   const [ing2, setIng2] = useState(props.pokemon.ingredients[1]);
   const [ing3, setIng3] = useState(props.pokemon.ingredients[2]);
-
+  useEffect(() => {
+    setIng1(props.pokemon.ingredients[0]);
+    setIng2(props.pokemon.ingredients[1]);
+    setIng3(props.pokemon.ingredients[2]);
+  }, [props]);
   async function onClickItem() {
     props.pokemon.ingredients = [ing1, ing2, ing3];
     close();
@@ -19,7 +24,7 @@ export function IngredientEdit(props: { open: boolean; onClose: () => void; poke
   }
   // const ingredients: Ingredients[] = ["とくせんリンゴ", "モーモーミルク", "ワカクサ大豆", "あまいミツ", "マメミート", "あったかジンジャー", "あんみんトマト", "とくせんエッグ", "ピュアなオイル", "ほっこりポテト", "げきからハーブ", "リラックスカカオ", "あじわいキノコ", "ふといながねぎ", "おいしいシッポ"];
   const ingredients = defaultpokemon.filter((poke) => poke.name === name)[0].ingredients.filter((ingredient) => ingredient !== "設定なし");
-  console.log(ingredients);
+  // console.log(ingredients);
   const SelectIng = ingredients.map((ingredient) => {
     return (
       <MenuItem value={ingredient} key={ingredient}>
@@ -47,21 +52,21 @@ export function IngredientEdit(props: { open: boolean; onClose: () => void; poke
               <InputLabel id="ing-1">食材1</InputLabel>
               <Select labelId="ing-1" value={ing1} label="食材" onChange={(e) => setIng1(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
-                {SelectIng}
+                {SelectIng.slice(0, 1)}
               </Select>
             </FormControl>
             <FormControl>
               <InputLabel id="ing-1">食材2</InputLabel>
               <Select labelId="ing-2" value={ing2} label="食材(25lv)" onChange={(e) => setIng2(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
-                {SelectIng}
+                {SelectIng.slice(0, 2)}
               </Select>
             </FormControl>
             <FormControl>
               <InputLabel id="ing-1">食材3</InputLabel>
               <Select labelId="ing-2" value={ing3} label="食材(75lv)" onChange={(e) => setIng3(e.target.value as Ingredients)} fullWidth={true}>
                 <MenuItem value={"設定なし"}>設定なし</MenuItem>
-                {SelectIng}
+                {SelectIng.slice(0, 3)}
               </Select>
             </FormControl>
           </div>

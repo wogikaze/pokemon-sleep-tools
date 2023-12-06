@@ -1,9 +1,12 @@
 import { Pokemon, PokemonNature } from "../types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 export function NatureEdit(props: { open: boolean; onClose: () => void; pokemon: Pokemon }) {
   const [nature, setNature] = useState(props.pokemon.nature);
+  useEffect(() => {
+    setNature(props.pokemon.nature);
+  }, [props]);
   async function onClickItem() {
     props.pokemon.nature = nature;
     close();

@@ -7,10 +7,12 @@ import { NatureEdit } from "./NatureEdit";
 import { MainSkillEdit } from "./MainSkillEdit";
 import { SubSkillEdit } from "./SubSkillEdit";
 import { useState, useEffect } from "react";
-import { addItem, getAllItems, removeItem } from "./db";
+import { addItem, getAllItems, removeItem, updateItem } from "./db";
+import { off } from "process";
 
-export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
+export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean; deleteFunction: (arg: number) => void }) {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+  const [personalId, setPersonalId] = useState(0);
   const [isOpenLevelEdit, setIsOpenLevelEdit] = useState(false);
   const [isOpenNatureEdit, setIsOpenNatureEdit] = useState(false);
   const [isOpenIngredientsEdit, setIsOpenIngredientsEdit] = useState(false);
@@ -22,42 +24,53 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
 
   useEffect(() => {
     setSelectedPokemon(props.pokemons[pokemonIndex]);
+    const id = props.pokemons[pokemonIndex]?.personalId;
+    if (id !== undefined) {
+      setPersonalId(id);
+    }
   }, [pokemonIndex, props.pokemons]);
 
   function openLevelEdit(index: number) {
     setPokemonIndex(index);
     setIsOpenLevelEdit(true);
   }
-  function closeLevelEdit() {
+  async function closeLevelEdit() {
     setIsOpenLevelEdit(false);
+    await updateItem(personalId, props.pokemons[pokemonIndex]);
   }
   function openIngredientsEdit(index: number) {
     setPokemonIndex(index);
-    setIsOpenIngredientsEdit(true);
+    setTimeout(() => {
+      setIsOpenIngredientsEdit(true);
+    }, 20);
   }
-  function closeIngredientsEdit() {
+  async function closeIngredientsEdit() {
     setIsOpenIngredientsEdit(false);
+    await updateItem(personalId, props.pokemons[pokemonIndex]);
   }
   function openNatureEdit(index: number) {
     setPokemonIndex(index);
     setIsOpenNatureEdit(true);
   }
-  function closeNatureEdit() {
+  async function closeNatureEdit() {
     setIsOpenNatureEdit(false);
+    await updateItem(personalId, props.pokemons[pokemonIndex]);
   }
   function openMainSkillEdit(index: number) {
     setPokemonIndex(index);
     setIsOpenMainSkillEdit(true);
   }
-  function closeMainSkillEdit() {
+  async function closeMainSkillEdit() {
     setIsOpenMainSkillEdit(false);
+    await updateItem(personalId, props.pokemons[pokemonIndex]);
   }
   function openSubSkillEdit(index: number) {
     setPokemonIndex(index);
     setIsopenSubSkillEdit(true);
   }
-  function closeSubSkillEdit() {
+  async function closeSubSkillEdit() {
     setIsopenSubSkillEdit(false);
+    await updateItem(personalId, props.pokemons[pokemonIndex]);
   }
 
   const columns = [
@@ -212,7 +225,10 @@ export function PokemonTable(props: { pokemons: Pokemon[]; sample?: boolean }) {
     onRowsDelete: async (e: any) => {
       console.log(e);
       e.data.forEach(async (ele: any) => {
-        await removeItem(ele.dataIndex);
+        const personalId = props.pokemons[ele.dataIndex].personalId;
+        if (personalId !== undefined) {
+          props.deleteFunction(personalId);
+        }
       });
     },
     rowsPerPage: props.sample ? 200 : 100,

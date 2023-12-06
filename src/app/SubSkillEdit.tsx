@@ -1,5 +1,5 @@
 import { Pokemon, SubSkill, SubSkiillNames, Ingredients } from "../types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Select, MenuItem } from "@mui/material";
 
 export function SubSkillEdit(props: { open: boolean; onClose: () => void; pokemon: Pokemon }) {
@@ -9,6 +9,14 @@ export function SubSkillEdit(props: { open: boolean; onClose: () => void; pokemo
   const [sub4, setSub4] = useState<SubSkill>(props.pokemon.subSkill[3]);
   const [sub5, setSub5] = useState<SubSkill>(props.pokemon.subSkill[4]);
 
+  useEffect(() => {
+    setSub1(props.pokemon.subSkill[0]);
+    setSub2(props.pokemon.subSkill[1]);
+    setSub3(props.pokemon.subSkill[2]);
+    setSub4(props.pokemon.subSkill[3]);
+    setSub5(props.pokemon.subSkill[4]);
+  }, [props]);
+  
   async function onClickItem() {
     props.pokemon.subSkill[0] = sub1;
     props.pokemon.subSkill[1] = sub2;
@@ -20,13 +28,6 @@ export function SubSkillEdit(props: { open: boolean; onClose: () => void; pokemo
   function close() {
     props.onClose();
   }
-  const set = [
-    [sub1, setSub1],
-    [sub2, setSub2],
-    [sub3, setSub3],
-    [sub4, setSub4],
-    [sub5, setSub5],
-  ];
   return (
     <>
       <Dialog open={props.open} keepMounted onClose={props.onClose}>

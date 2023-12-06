@@ -10,7 +10,7 @@ class MyDatabase extends Dexie {
   public constructor() {
     super("Pokemon");
     this.version(1).stores({
-      items: "++id, name, level, berry, ingredients, nature, mainSkill, mainSkillLevel, subSkill",
+      items: "++personalId, name, level, berry, ingredients, nature, mainSkill, mainSkillLevel, subSkill",
     });
 
     // テーブルをDexieに紐付ける
@@ -30,4 +30,10 @@ export const getAllItems = async (): Promise<Pokemon[]> => {
 };
 export const removeItem = async (id: number): Promise<void> => {
   return db.items.delete(id);
+};
+export const updateItem = async (id: number, Pokemon: Pokemon): Promise<number> => {
+  console.log(id, Pokemon);
+  console.log("終了確認");
+  return await db.items.update(id, Pokemon);
+  // return db.items.update(id, { Pokemon });
 };

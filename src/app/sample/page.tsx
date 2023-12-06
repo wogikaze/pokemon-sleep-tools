@@ -16,7 +16,7 @@ const Home = () => {
           トップに戻る &rarr;
         </a>
       </div>
-      <PokemonTable pokemons={defaultpokemon} sample={true}></PokemonTable>
+      <PokemonTable pokemons={defaultpokemon} sample={true} deleteFunction={() => {}}></PokemonTable>
     </div>
   );
 };

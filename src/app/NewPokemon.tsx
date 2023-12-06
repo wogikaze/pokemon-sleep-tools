@@ -4,7 +4,7 @@ import { Pokemon, Berry, Ingredients, PokemonNature, MainSkill, SubSkill, Pokemo
 import Select from "react-select";
 import { defaultpokemon } from "./pokemonlist";
 
-export function NewPokemon(props: { open: boolean; onClose: () => void; setPokemon: (pokemon: Pokemon) => void; buildId: number }) {
+export function NewPokemon(props: { open: boolean; onClose: () => void; setPokemon: (pokemon: Pokemon) => void }) {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -23,7 +23,6 @@ export function NewPokemon(props: { open: boolean; onClose: () => void; setPokem
 
   function onClickItem() {
     const newPokemon: Pokemon = {
-      personalId: props.buildId,
       name: pokemon,
       level: level,
       berry: defaultpokemon.filter((p) => p.name === pokemon)[0].berry,

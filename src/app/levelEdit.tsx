@@ -1,10 +1,12 @@
 import { Pokemon } from "../types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from "@mui/material";
 
 export function LevelEdit(props: { open: boolean; onClose: () => void; pokemon: Pokemon }) {
   const [level, setLevel] = useState(props.pokemon.level);
-
+  useEffect(() => {
+    setLevel(props.pokemon.level);
+  }, [props]);
   async function onClickItem() {
     if (level >= 1) props.pokemon.level = level;
     close();

@@ -3,30 +3,32 @@ import { useState, useEffect } from "react";
 import { Pokemon } from "../types";
 import { NewPokemon } from "./NewPokemon";
 import { PokemonTable } from "./PokemonTable";
-import { addItem, getAllItems } from "./db";
+import { addItem, getAllItems, removeItem } from "./db";
 
 function MyApp() {
   const [PokemonList, setPokemonList] = useState<Pokemon[]>([]);
 
   const fetchData = async () => {
     const data = await getAllItems();
-    console.log(data)
+    console.log(data.map((poke) => poke.personalId));
     setPokemonList(data);
   };
   useEffect(() => {
     fetchData();
   }, []);
-
   const [isOpenNewPokemonScreen, setIsOpenNewPokemonScreen] = useState(false);
   const handleClickOpenNewPokemon = () => {
     setIsOpenNewPokemonScreen(true);
   };
-
+  const deletePokemons = async (personalId: number) => {
+    await removeItem(personalId);
+    setPokemonList(PokemonList.filter((e) => e.personalId !== personalId));
+  };
   const handleCloseNewPokemon = () => {
     setIsOpenNewPokemonScreen(false);
   };
   const addPokemon = async (newPokemon: Pokemon) => {
-    console.log(newPokemon);
+    console.log([...PokemonList, newPokemon]);
     await setPokemonList([...PokemonList, newPokemon]);
     addItem(newPokemon);
   };
@@ -45,14 +47,25 @@ function MyApp() {
           </a>
         </div>
         <div className="grid gap-3 w-full sm:inline-flex flex-row-reverse">
-          <a className=" py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-400 text-white hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" onClick={() => setPokemonList([])}>
+          <a
+            className=" py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-400 text-white hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            href="#"
+            onClick={() => {
+              setPokemonList([]);
+              PokemonList.map(async (e) => {
+                if (e.personalId !== undefined) {
+                  await removeItem(e.personalId);
+                }
+              });
+            }}
+          >
             クリア
           </a>
         </div>
       </div>
 
-      {isOpenNewPokemonScreen && <NewPokemon open={isOpenNewPokemonScreen} onClose={handleCloseNewPokemon} setPokemon={addPokemon} buildId={1} />}
-      <PokemonTable pokemons={PokemonList}></PokemonTable>
+      {isOpenNewPokemonScreen && <NewPokemon open={isOpenNewPokemonScreen} onClose={handleCloseNewPokemon} setPokemon={addPokemon} />}
+      <PokemonTable pokemons={PokemonList} deleteFunction={deletePokemons}></PokemonTable>
     </div>
   );
 }
